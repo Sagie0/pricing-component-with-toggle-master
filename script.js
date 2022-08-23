@@ -19,8 +19,20 @@ toggleSwitch.onclick = ()=> {
     annualPricing = !annualPricing
     
     
+    // if (annualPricing){
+    //     document.querySelector('.toggle-ident').style.marginLeft = '20px'  
+    //     basicPricing.innerHTML = anualBasicPricing
+    //     professionalPricing.innerHTML = anualProfessionalPricing
+    //     masterPricing.innerHTML = anualMasterPricing
+    // } else {
+    //     document.querySelector('.toggle-ident').style.marginLeft = '0px'  
+    //     basicPricing.innerHTML = monthlyBasicPricing
+    //     professionalPricing.innerHTML = monthlyProfessionalPricing
+    //     masterPricing.innerHTML = monthlyMasterPricing
+    // }
+
     if (annualPricing){
-        document.querySelector('.toggle-ident').style.marginLeft = '20px'  
+        document.querySelector('.toggle-ident').style.cssText = "margin-left: 20.5px; transition: 0.5s;"   
         basicPricing.innerHTML = anualBasicPricing
         professionalPricing.innerHTML = anualProfessionalPricing
         masterPricing.innerHTML = anualMasterPricing
